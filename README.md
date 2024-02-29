@@ -26,10 +26,18 @@ template by [OnWritingCode/simple-blog-template](https://github.com/OnWritingCod
 
 ## 🚀 Quick Start
 
-1. **Clone the repository**
+1. **Fork and clone the repository**
+
+or clone my repository and remove .git directory
 
 ```bash
 git clone https://github.com/RUNFUNRUN/astro-blog-template.git
+cd astro-blog-template
+rm -rf .git
+
+# init new git repository
+git init
+...
 ```
 
 2. **Install dependencies**
