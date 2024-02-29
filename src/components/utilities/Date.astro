@@ -1,7 +1,8 @@
 ---
 	const {date} = Astro.props;
 
-	const formattedDate = new Intl.DateTimeFormat(import.meta.env.PUBLIC_LC, {
+  const lc = import.meta.env.PUBLIC_LC as string ?? 'en-US';
+	const formattedDate = new Intl.DateTimeFormat(lc, {
     year: 'numeric',
     month: 'numeric',
     day: 'numeric' 
