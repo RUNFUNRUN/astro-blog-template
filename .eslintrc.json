@@ -5,8 +5,14 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "extends": ["plugin:@typescript-eslint/recommended", "eslint:recommended", "prettier"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended",
+    "plugin:astro/recommended",
+    "prettier"
+  ],
   "rules": {
+    "no-tabs": "error",
     "indent": [
       "error",
       2,
@@ -19,5 +25,23 @@
     "jsx-quotes": ["error", "prefer-single"],
     "semi": ["error", "always"],
     "@typescript-eslint/no-explicit-any": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.astro"],
+      "parser": "astro-eslint-parser",
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "extraFileExtensions": [".astro"]
+      },
+      "rules": {
+        "astro/no-set-html-directive": "error",
+        "astro/valid-compile": "off"
+      }
+    },
+    {
+      "files": ["*.ts"],
+      "parser": "@typescript-eslint/parser"
+    }
+  ]
 }

@@ -1,21 +1,21 @@
 ---
-	import "../../style/style.scss"
-	import Top from "@components/Top";
-	import Bottom from "@components/Bottom";
-	const {title} = Astro.props;
-  const lang = import.meta.env.PUBLIC_LANG as string ?? 'en-US';
+import '../../style/style.scss';
+import Top from '@components/Top';
+import Bottom from '@components/Bottom';
+const {title} = Astro.props;
+const lang = import.meta.env.PUBLIC_LANG as string ?? 'en-US';
 ---
 <html lang={lang}>
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width" />
-	<title>{title}</title>
-</head>
-<body>
-	<div class="main">
-		<Top />
-		<slot />
-		<Bottom />
-	</div>
-</body>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width' />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class='main'>
+      <Top />
+      <slot />
+      <Bottom />
+    </div>
+  </body>
 </html>

@@ -7,13 +7,15 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "format": "prettier --write .",
-    "lint": "eslint --ext .ts,.tsx,.js,.jsx .",
-    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx . --fix"
+    "lint": "eslint --ext .ts,.tsx,.js,.jsx,.astro .",
+    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.astro . --fix"
   },
   "devDependencies": {
     "@astrojs/sitemap": "^0.1.0",
-    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
     "astro": "^1.0.0-beta.2",
+    "eslint-plugin-astro": "^0.31.4",
     "sass": "^1.49.9"
   },
   "dependencies": {
