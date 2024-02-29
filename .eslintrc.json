@@ -1,0 +1,23 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "ESNext",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "extends": ["plugin:@typescript-eslint/recommended", "eslint:recommended", "prettier"],
+  "rules": {
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-single"],
+    "semi": ["error", "always"],
+    "@typescript-eslint/no-explicit-any": "off"
+  }
+}
