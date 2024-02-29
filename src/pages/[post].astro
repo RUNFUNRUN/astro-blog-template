@@ -26,6 +26,9 @@ const { post: { Content }, post } = Astro.props;
     <div class='post-date'>
       <Date date={post.date}/>
     </div>
+    <div>
+      <p>{post.preview}</p>
+    </div>
   </div>
   <div class='content container'>
     <Content />
@@ -38,8 +41,16 @@ const { post: { Content }, post } = Astro.props;
     margin-top: 60px;
     margin-bottom: 40px;
   }
+
   .post-date {
     font-size: 0.75rem;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .post-preview {
+    margin-bottom: 20px;
   }
 
   .content {

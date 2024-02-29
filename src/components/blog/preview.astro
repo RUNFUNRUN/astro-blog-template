@@ -1,9 +1,29 @@
 ---
 import type { Post } from '@data/post';
+import Date from '@components/utilities/Date';
 const post: Post = Astro.props.post;
 ---
 
 <div>
   <h2><a href={`/${post.slug}`}>{post.title}</a></h2>
-  <p>{post.preview}</p>
+  <div>
+    <p class='preview'>{post.preview}</p>
+    <p class='date'>
+      <Date date={post.date}/>
+    </p>
+  </div>
 </div>
+
+<style>
+  .preview {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .date {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+</style>
+
