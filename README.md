@@ -63,6 +63,8 @@ and remove the example posts from the `src/content` directory.
 
 `drafts` directory is for posts that aren't published yet.
 
+`public/favicon.ico` also should be replaced with your own.
+
 Good luck with your new blog! 🚀
 
 ## 💡 Project Structure
