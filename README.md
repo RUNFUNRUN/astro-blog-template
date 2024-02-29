@@ -2,6 +2,8 @@
 
 template by [OnWritingCode/simple-blog-template](https://github.com/OnWritingCode/simple-blog-template)
 
+[Original Demo](https://simple-blog-template.netlify.app/) 👀
+
 **Features**
 
 - Full Markdown support.
@@ -15,6 +17,12 @@ template by [OnWritingCode/simple-blog-template](https://github.com/OnWritingCod
 
 - TypeScript
 - Sass (scss)
+
+**What is different from the original?**
+
+- Build errors fixed
+- Add prettier and eslint
+- Name, etc. to envrionment variables
 
 ## 🚀 Quick Start
 
@@ -42,6 +50,12 @@ cp .env.example .env
 ```bash
 bun dev
 ```
+
+and remove the example posts from the `src/content` directory.
+
+`drafts` directory is for posts that aren't published yet.
+
+Good luck with your new blog! 🚀
 
 ## 💡 Project Structure
 
