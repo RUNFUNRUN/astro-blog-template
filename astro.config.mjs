@@ -28,7 +28,8 @@ export default defineConfig(
         },
       ],
     },
-    site: import.meta.env.PUBLIC_SITE_URL ?? 'http://localhost:3000/',
+    // eslint-disable-next-line no-undef
+    site: process.env.PUBLIC_SITE_URL ?? 'http://localhost:3000/',
     integrations: [sitemap()],
   },
 );
