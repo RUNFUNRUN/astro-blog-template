@@ -28,7 +28,7 @@ export default defineConfig(
         },
       ],
     },
-    site: 'http://localhost:3000/',
+    site: import.meta.env.PUBLIC_SITE_URL ?? 'http://localhost:3000/',
     integrations: [sitemap()],
   },
 );
